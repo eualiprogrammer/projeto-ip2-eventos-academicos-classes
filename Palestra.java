@@ -1,31 +1,31 @@
 package projeto_ip2_eventos_academicos;
 
 public class Palestra {
-    private String título;
+    private String titulo;
     private String descrição;
     private int duraçãoHoras;
-    private LocalDate horário;
+    private LocalDate horario;
     private Palestrante palestrante;
     private ArrayList<Participante> participantes;
     private Sala sala;
 
-    public Palestra(String título, String descrição, int duraçãoHoras, String horário, Palestrante palestrante, Participante participantes, Sala sala) {
-        this.título = título;
+    public Palestra(String titulo, String descrição, int duraçãoHoras, String horario, Palestrante palestrante, Participante participantes, Sala sala) {
+        this.titulo = titulo;
         this.descrição = descrição;
         this.duraçãoHoras = duraçãoHoras;
-        this.horário = horário;
+        this.horario = horario;
         this.palestrante = palestrante;
         this.participantes = new ArrayList<>();
         this.sala = sala;
     }
 
     // Getters e Setters
-    public String getTítulo() {
-        return título;
+    public String getTitulo() {
+        return titulo;
     }
 
-    public void setTítulo(String título) {
-        this.título = título;
+    public void setTitulo(String titulo) {
+        this.titulo = titulo;
     }
 
     public String getDescrição() {
@@ -48,8 +48,8 @@ public class Palestra {
         return horário;
     }
 
-    public void setHorário(String horário) {
-        this.horário = horário;
+    public void setHorario(String horario) {
+        this.horario = horario;
     }
 
     public Palestrante getPalestrante() {
