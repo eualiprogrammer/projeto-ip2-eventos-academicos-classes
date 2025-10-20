@@ -4,18 +4,18 @@ public class Palestra {
     private String título;
     private String descrição;
     private int duraçãoHoras;
-    private String horário;
+    private LocalDate horário;
     private Palestrante palestrante;
-    private Participante participante;
+    private ArrayList<Participante> participantes;
     private Sala sala;
 
-    public Palestra(String título, String descrição, int duraçãoHoras, String horário, Palestrante palestrante, Participante participante, Sala sala) {
+    public Palestra(String título, String descrição, int duraçãoHoras, String horário, Palestrante palestrante, Participante participantes, Sala sala) {
         this.título = título;
         this.descrição = descrição;
         this.duraçãoHoras = duraçãoHoras;
         this.horário = horário;
         this.palestrante = palestrante;
-        this.participante = participante;
+        this.participantes = new ArrayList<>();
         this.sala = sala;
     }
 
@@ -60,12 +60,12 @@ public class Palestra {
         this.palestrante = palestrante;
     }
 
-    public Participante getParticipante(){
-        return participante;
+    public Participante getParticipantes(){
+        return participantes;
     }
 
-    public void setParticipante(Participante participante){
-        this.participante = participante;
+    public void setParticipantes(Participante participantes){
+        this.participantes = participantes;
     }
 
     public Sala getSala(){
