@@ -1,5 +1,7 @@
 package projeto_ip2_eventos_academicos;
 
+//ignore esse pull request
+
 public class Palestra {
     private String título;
     private String descrição;
